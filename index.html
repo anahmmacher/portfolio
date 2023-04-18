@@ -37,7 +37,7 @@
 							always looking to expand my skillset and enjoy tackling new challenges.
 						</p>
 						<ul class="actions">
-							<li><button class="button" onclick="location.href='Resume_031423_test.pdf';"> Resume </button></li>
+							<li><button class="button" onclick="location.href='Resume_041423.pdf';"> Resume </button></li>
 						</ul>
 					</section>
 
@@ -60,6 +60,14 @@
 								<a href="https://anahmmacher.github.io/Javascript_Project_12_27_21/" class="button">See Here</a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/fulls/name-full.jpg" class="image fit thumb"><img src="images/thumbs/name-thumb.jpg"
+										alt="" /></a>
+								<h3>What's in a Name</h3>
+								<p>A look at name details and trends over time.</p>
+								<br>
+								<a href="https://anahmmacher.github.io/whats_in_a_name/" class="button">See Here</a>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/soon-full.png" class="image fit thumb"><img src="images/thumbs/soon-thumb.png" alt="" /></a>
 								<h3>Coming Soon</h3>
 								<p>Work in progress, will update soon.</p>
@@ -74,16 +82,16 @@
 						<h2>Get In Touch</h2>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form id=email-form method="post" action="Send_email.php">
+								<form id=email-form action="https://formsubmit.co/acnahmmacher@gmail.com" method="POST" enctype="text/plain">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required/></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
 										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" name="submit_form"/></li>
-								</ul>
+										<ul class="actions">
+											<li id="email-submit"><input type="submit" name="submit" value="Send Message" /></li>
+										</ul>
+								</form> 
 							</div>
 						</div>
 					</section>
@@ -412,9 +420,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<footer id="footer">
 				<div class="inner">
 					<ul class="icons">
-						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+						<li><a href="https://www.linkedin.com/in/arthur-nahmmacher/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/anahmmacher" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://wellfound.com/u/arthur-nahmmacher" class="icon brands fa-angellist"><span class="label">Angel List</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -429,6 +437,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script>
+				function sendEmail(){
+					Email.send({
+						Host: "smtp.gmail.com",
+						Username: "acnahmmacher@gmail.com",
+						Password: "password",
+						To: 'them@website.com',
+						From: "you@isp.com",
+						Subject: "This is the subject",
+						Body: "And this is the body"
+					}).then(
+						message => alert(message)
+					);
+				}
+			</script>
 	</body>
 </html>
