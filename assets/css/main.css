@@ -2434,6 +2434,7 @@ input, select, textarea {
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
+	.sub-btn,
 	.button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -2463,6 +2464,7 @@ input, select, textarea {
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
+		.sub-btn:hover
 		.button:hover {
 			border-color: #49bf9d;
 			color: #49bf9d !important;
@@ -2471,6 +2473,7 @@ input, select, textarea {
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
+		.sub-btn:active,
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
 			border-color: #49bf9d;
@@ -2480,6 +2483,7 @@ input, select, textarea {
 		input[type="submit"].icon,
 		input[type="reset"].icon,
 		input[type="button"].icon,
+		.sub-btn.icon,
 		.button.icon {
 			padding-left: 1.35em;
 		}
@@ -2487,6 +2491,7 @@ input, select, textarea {
 			input[type="submit"].icon:before,
 			input[type="reset"].icon:before,
 			input[type="button"].icon:before,
+			.sub-btn.icon::before,
 			.button.icon:before {
 				margin-right: 0.5em;
 			}
@@ -2494,6 +2499,7 @@ input, select, textarea {
 		input[type="submit"].fit,
 		input[type="reset"].fit,
 		input[type="button"].fit,
+		.sub-btn.fit,
 		.button.fit {
 			min-width: 0;
 			width: 100%;
@@ -2502,6 +2508,7 @@ input, select, textarea {
 		input[type="submit"].small,
 		input[type="reset"].small,
 		input[type="button"].small,
+		.sub-btn.small,
 		.button.small {
 			font-size: 0.8em;
 		}
@@ -2509,6 +2516,7 @@ input, select, textarea {
 		input[type="submit"].large,
 		input[type="reset"].large,
 		input[type="button"].large,
+		.sub-btn.large,
 		.button.large {
 			font-size: 1.35em;
 		}
@@ -2516,6 +2524,7 @@ input, select, textarea {
 		input[type="submit"].primary,
 		input[type="reset"].primary,
 		input[type="button"].primary,
+		.sub-btn.primary,
 		.button.primary {
 			background-color: #49bf9d;
 			border-color: #49bf9d;
@@ -2525,6 +2534,7 @@ input, select, textarea {
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
+			.sub-btn.primary:hover,
 			.button.primary:hover {
 				background-color: #5cc6a7;
 				border-color: #5cc6a7;
@@ -2533,6 +2543,7 @@ input, select, textarea {
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
+			.sub-btn.primary:active,
 			.button.primary:active {
 				background-color: #3eb08f;
 				border-color: #3eb08f;
@@ -2543,6 +2554,7 @@ input, select, textarea {
 		input[type="reset"]:disabled,
 		input[type="button"].disabled,
 		input[type="button"]:disabled,
+		.sub-btn.disabled,
 		.button.disabled,
 		.button:disabled {
 			background-color: #e7e7e7 !important;
@@ -3220,6 +3232,6 @@ input, select, textarea {
 
 	}
 
-	#email-submit{
+	.sub-btn{
 		margin-top: 20px;
 	}
